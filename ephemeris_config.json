@@ -2,11 +2,11 @@
   "ephemerisItems": [
     {
       "name": "Apophis",
-      "githubUrl": "apophis_ephemeris.json"
+      "path": "apophis_ephemeris.json"
     },
     {
       "name": "Bennu",
-      "githubUrl": "bennu_ephemeris.json"
+      "path": "bennu_ephemeris.json"
     }
   ]
 }
