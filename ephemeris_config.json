@@ -6,7 +6,8 @@
     },
     {
       "name": "Bennu",
-      "githubUrl": "https://raw.githubusercontent.com/yourusername/ephemeris-data/main/bennu_ephemeris.json"
+      "githubUrl": "https://raw.githubusercontent.com/yourusername/ephemeris-data/main/bennu_ephemeris.example.json"
     }
   ]
 }
+
