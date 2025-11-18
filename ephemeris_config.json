@@ -2,12 +2,11 @@
   "ephemerisItems": [
     {
       "name": "Apophis",
-      "githubUrl": "https://raw.githubusercontent.com/yourusername/ephemeris-data/main/apophis_ephemeris.json"
+      "githubUrl": "https://raw.githubusercontent.com/Josh-Williams-Curtin/public-test/main/apophis_ephemeris.json"
     },
     {
       "name": "Bennu",
-      "githubUrl": "https://raw.githubusercontent.com/yourusername/ephemeris-data/main/bennu_ephemeris.example.json"
+      "githubUrl": "https://raw.githubusercontent.com/Josh-Williams-Curtin/public-test/main/bennu_ephemeris.json"
     }
   ]
 }
-
