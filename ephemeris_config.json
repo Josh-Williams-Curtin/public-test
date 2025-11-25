@@ -1,11 +1,13 @@
 {
-  "ephemerisItems": [],
-  "test": "5"
+  "ephemerisItems": [
+    {
+      "name": "Apophis",
+      "path": "apophis_ephemeris.json"
+    },
+    {
+      "name": "Bennu",
+      "path": "bennu_ephemeris.json"
+    }
+  ],
+  "test": "6"
 }
-
-
-
-
-
-
-
