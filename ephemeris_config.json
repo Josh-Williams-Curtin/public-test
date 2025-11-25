@@ -1,12 +1,8 @@
 {
-  "ephemerisItems": [
-    {
-      "name": "Apophis",
-      "path": "apophis_ephemeris.json"
-    }
-  ],
+  "ephemerisItems": [],
   "test": "5"
 }
+
 
 
 
