@@ -169,4 +169,4 @@ The app requires these environment variables to sync from this repository, if yo
   - Becomes: `https://raw.githubusercontent.com/username/repo-name/branch/apophis_ephemeris.json`
 - `EXPO_PUBLIC_GITHUB_COMMIT_URL`: Base URL for GitHub API commits endpoint
   - Example: `https://api.github.com/repos/username/repo-name/commits?sha=branch&path=`
-  - Example: `https://api.github.com/repos/username/repo-name/commits?sha=branch&path=apophis_ephemeris.json`
+  - Becomes: `https://api.github.com/repos/username/repo-name/commits?sha=branch&path=apophis_ephemeris.json`
