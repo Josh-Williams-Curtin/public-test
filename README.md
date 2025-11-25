@@ -2,7 +2,9 @@
 
 This repository contains ephemeris (celestial position) data files used by the **Fireballs in the Sky** mobile app. The app automatically syncs these files on startup to provide up-to-date celestial object positions for the planetarium feature.
 
-**Important:** The json files must be valid json and pass javascripts JSON.parse() (This means no unnecessary trailing commas)
+**Important:**
+- The json files must be valid json and pass javascripts JSON.parse() (This means no unnecessary trailing commas)
+- The json files should be no larger than 6mb each as they are stored using React Native's AsyncStorage
 
 ---
 
