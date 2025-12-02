@@ -3,13 +3,10 @@
     {
       "name": "Apophis",
       "path": "apophis_ephemeris.json"
-    },
-    {
-      "name": "Bennu",
-      "path": "bennu_ephemeris.json"
     }
   ],
-  "test": 11
+  "test": 12
 }
+
 
 
