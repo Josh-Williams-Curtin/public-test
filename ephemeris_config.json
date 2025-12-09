@@ -1,10 +1,15 @@
 {
   "ephemerisItems": [
     {
+      "name": "Apophis",
+      "path": "apophis_ephemeris.json"
+    },
+    {
       "name": "Bennu",
       "path": "bennu_ephemeris.json"
     }
   ],
-  "test": "15"
+  "test": "16"
 }
+
 
