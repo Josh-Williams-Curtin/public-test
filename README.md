@@ -105,10 +105,13 @@ The **Fireballs in the Sky** app uses the `GitHubSyncController` to automaticall
 
 1. **On App Startup**: The app checks the last modified date of `ephemeris_config.json` via the GitHub API.
 2. **Config Comparison**: If the config file's last modified date has been changed since last sync, the app downloads and saves the new config file's data.
-3. **Item Sync**: For each item in the config, the app:
+3. **Config Pruning (delete removed items)**: Before saving the updated config, the app compares the *previous* stored config item names with the *new* config item names. Any item that is no longer present is deleted from AsyncStorage (the key is the item's `name`).
+4. **Item Sync**: For each item in the config, the app:
    - Checks and compares the last modified date of the ephemeris data file with the locally stored version
    - Downloads and updates the locally stored version only if the file has been updated
-4. **Storing**: All data is cached locally in the app's AsyncStorage for offline access.
+5. **Storing**: All data is cached locally in the app's AsyncStorage for offline access.
+
+**Note on timing / caching:** GitHub's raw/commit endpoints can be cached briefly. The app intentionally delays fetches for recently-modified files (up to ~10 minutes) to avoid pulling stale data.
 
 ---
 
@@ -154,7 +157,7 @@ The **Fireballs in the Sky** app uses the `GitHubSyncController` to automaticall
 
 2. **Commit and push**:
    - The app will stop syncing the removed object
-   - Note: The app currently doesn't automatically delete cached data for removed objects (this is a known TODO in the codebase)
+   - The app will automatically delete the removed object's cached AsyncStorage entry (keyed by `name`) the next time it detects the config has changed and re-syncs.
 
 ---
 
