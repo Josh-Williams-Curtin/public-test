@@ -163,7 +163,7 @@ The **Fireballs in the Sky** app uses the `GitHubSyncController` to automaticall
 
 ## Generating Ephemeris Files
 
-Ephemeris data files are generated using the `gen_apophis.py` script located in the main app's repository at `scripts/ephemeris_generator/`. This script queries NASA JPL Horizons to fetch celestial object positions and creates optimized sparse ephemeris files.
+Ephemeris data files are generated using the ~~`gen_apophis.py`~~ `gen_apophis_v2.py` script located in the main app's repository at `scripts/ephemeris_generator/`. These scripts query NASA JPL Horizons to fetch celestial object positions and create optimized sparse ephemeris files.
 
 ## Environment Variables (App Side)
 
